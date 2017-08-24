@@ -3,7 +3,7 @@ echo "-----&gt; Installing cmake 3.9.1"
 # change to the the BUILD_DIR ($1)
 cd $1
 # download the binary (-O) silently (-s)
-wget https://cmake.org/files/v3.9/cmake-3.9.1-Linux-x86_64.sh -s -O
+curl https://cmake.org/files/v3.9/cmake-3.9.1-Linux-x86_64.sh -s -O
 # make a directory to untar (like unzip) the binary
 mkdir -p vendor/cmake
 # run the installation script
